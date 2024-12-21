@@ -63,15 +63,15 @@ const Navbar = () => {
             <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="Our Course">
-              <Link href="/allProducts">Our Course</Link>
+              <Link href="/">Our Course</Link>
               <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="About Us">
-              <Link href="/aboutUs">About Us</Link>
+              <Link href="/">About Us</Link>
               <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="Admin Panel">
-              <Link href="/dp">AdminPanel</Link>
+              <Link href="/">ContactUs</Link>
               <hr className="border-2 border-[#70c494]"/>
             </li>
           </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
               <Link href="/aboutUs">About Us</Link>
             </li>
             <li title="Admin Panel">
-              <Link href="/dp">AdminPanel</Link>
+              <Link href="/dp">ContactUs</Link>
             </li>
           </ul>
         )}
