@@ -1,4 +1,4 @@
-• Primary color: #70c494 ;
+• Primary color: #70c494  (green);
 
 • import { Ubuntu } from "next/font/google";
 

@@ -15,39 +15,47 @@ const Banner = () => {
         // Calculate the next banner index
         const nextBanner = (currentBanner % 4) + 1;
         setCurrentBanner(nextBanner);
-      }, 3000);
+      }, 2000);
       return () => clearInterval(intervalId);
     }, [currentBanner]);
 
     return (
-<div className="parent-banner">
+<div>
       {/* bannerImages section  */}
       <div>
+      <div className='relative'>
         <Image
-          className="bannerImage lg:w-full lg:h-screen sm: h-[700px] bg-[#5A287F]"
+          className="relative bannerImage lg:w-full lg:h-[600px] sm: h-[500px] bg-[#5A287F]"
           src={banner1}
           alt=""
           style={{ display: currentBanner === 1 ? "block" : "none" }}
         />
+        </div>
+        <div className='absolute w-full h-full bg-black inset-0'/>
+        </div>
+      <div>
         <Image
-          className="bannerImage lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
+          className="bannerImage lg:w-full lg:h-[600px]  sm: h-[500px] bg-[#5A287F]"
           src={banner2}
           alt=""
           style={{ display: currentBanner === 2 ? "block" : "none" }}
         />
+      </div>
+      <div>
         <Image
-          className="bannerImage lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
+          className="bannerImage lg:w-full lg:h-[600px]  sm: h-[500px] bg-[#5A287F]"
           src={banner3}
           alt=""
           style={{ display: currentBanner === 3 ? "block" : "none" }}
         />
+      </div>
+      <div>
         <Image
-          className="bannerImage lg:w-full lg:h-screen  sm: h-[700px] bg-[#5A287F]"
+          className="bannerImage lg:w-full lg:h-[600px]  sm: h-[500px] bg-[#5A287F]"
           src={banner4}
           alt=""
           style={{ display: currentBanner === 4 ? "block" : "none" }}
         />
-      <div className="overlay" />
       </div>
         </div>
     );

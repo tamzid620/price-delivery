@@ -60,15 +60,19 @@ const Navbar = () => {
           <ul className="uppercase flex gap-10 ">
             <li title="Home">
               <Link href="/">Home</Link>
+            <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="Our Course">
               <Link href="/allProducts">Our Course</Link>
+              <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="About Us">
               <Link href="/aboutUs">About Us</Link>
+              <hr className="border-2 border-[#70c494]"/>
             </li>
             <li title="Admin Panel">
               <Link href="/dp">AdminPanel</Link>
+              <hr className="border-2 border-[#70c494]"/>
             </li>
           </ul>
         </div>

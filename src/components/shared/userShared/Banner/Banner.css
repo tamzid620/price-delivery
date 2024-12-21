@@ -10,10 +10,6 @@
       transform: scale(1);
     }
   }
-  .parent-banner {
-    position: relative; 
-    overflow: hidden; 
-  }
   
   .bannerImage {
     animation: zoomIn 6s ease-in-out infinite;
@@ -25,10 +21,4 @@
   .bannerInfo {
     position: absolute;
     transform: translate(0%, 150%);
-  }
-  .overlay {
-    position: absolute;
-    inset: 0;
-    background-color: black;
-    opacity: 0.4;
   }
