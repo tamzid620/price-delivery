@@ -73,13 +73,13 @@ const FAQ = () => {
   };
 
   return (
-    <div className="mt-32">
+    <div className="mt-32 lg:px-4 md:px-4 sm: px-4 ">
       <h1
         className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
       </h1>
-      <div className=" grid md:grid-cols-2 sm: grid-cols-1 gap-8">
+      <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 gap-8">
         {/* accordio div  */}
         <div className=" overflow-y-auto">
       {accordionData.map((item, index) => (

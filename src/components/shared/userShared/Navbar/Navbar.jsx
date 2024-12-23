@@ -92,7 +92,7 @@ const Navbar = () => {
           <ul
             className="absolute top-16 uppercase block gap-10
            bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
-           text-center leading-[50px] py-4"
+           text-center leading-[50px] py-4 "
           >
             <li title="Home">
               <Link href="/">Home</Link>

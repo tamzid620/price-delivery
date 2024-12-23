@@ -42,14 +42,14 @@ const trandingData = [
 
 const TradingAccounts = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-32 lg:px-4 md:px-4 sm: px-4 ">
       <h1
         className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
       >
         What you will learn
       </h1>
       <div
-        className={`${ubuntu.className} grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5`}
+        className={`${ubuntu.className} grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 lg:gap-5 md:gap-10 sm: gap-10`}
       >
         {trandingData?.map(({ icon, title, disc }, index) => (
           <div key={index} className="relative">
