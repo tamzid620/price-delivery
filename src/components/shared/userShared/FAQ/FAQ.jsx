@@ -2,10 +2,19 @@
 import * as React from "react";
 import FAQImage from "@/assests/images/Banner-6.jpg";
 import Image from "next/image";
+import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
-// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
+
+const ubuntu = Ubuntu({
+  weight: ["400", "700"],
+  style: ["normal"],
+});
+
+const raleway = Raleway({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal"],
+});
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => {
   return (
@@ -25,15 +34,6 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
     </div>
   );
 };
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
 
 const accordionData = [
   {

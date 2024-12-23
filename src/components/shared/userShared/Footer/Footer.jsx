@@ -1,10 +1,73 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>Footer</h1>
+        <footer className="bg-gray-900 text-white py-8">
+        <div className="container  grid grid-cols-1 md:grid-cols-3 gap-8 xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
+         lg:px-4 md:px-4 sm: px-4">
+          {/* About Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">About Us</h3>
+            <p className="text-sm">
+              We are committed to providing top-notch trading solutions to help
+              you succeed in the dynamic world of finance. Let’s grow together!
+            </p>
+          </div>
+  
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/stock-trading">
+                  <p className="hover:underline">Stock Trading</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/commodity-trading">
+                  <p className="hover:underline">Commodity Trading</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/forex-trading">
+                  <p className="hover:underline">Forex Trading</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/crypto-trading">
+                  <p className="hover:underline">Crypto Trading</p>
+                </Link>
+              </li>
+            </ul>
+          </div>
+  
+          {/* Contact Section */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2">
+              <li>
+                <span>Email: </span>
+                <p
+                  href="mailto:info@yourwebsite.com"
+                  className="hover:underline"
+                >
+                  info@yourwebsite.com
+                </p>
+              </li>
+              <li>Phone: +1 123-456-7890</li>
+              <li>Location: 123 Trading St., Finance City</li>
+            </ul>
+          </div>
         </div>
+  
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+          <p>
+            © {new Date().getFullYear()} YourWebsiteName. All rights reserved.
+          </p>
+        </div>
+      </footer>
     );
 };
 
