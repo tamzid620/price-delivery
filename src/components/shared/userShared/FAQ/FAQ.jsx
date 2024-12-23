@@ -4,7 +4,27 @@ import FAQImage from "@/assests/images/Banner-6.jpg";
 import Image from "next/image";
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
+// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
 
+const AccordionItem = ({ title, content, isOpen, onClick }) => {
+  return (
+    <div className="border rounded-md shadow-sm mb-4 overflow-hidden">
+      <button
+        className="w-full flex justify-between items-center p-[19px] bg-gray-100 text-left"
+        onClick={onClick}
+      >
+        <span className="text-lg font-medium">{title}</span>
+        {isOpen ? <TbArrowBadgeUpFilled /> : <TbArrowBadgeDownFilled />}
+      </button>
+      {isOpen && (
+        <div className="p-4 bg-white text-gray-700">
+          <p>{content}</p>
+        </div>
+      )}
+    </div>
+  );
+};
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
   style: ["normal"],
@@ -15,7 +35,43 @@ const raleway = Raleway({
   style: ["normal"],
 });
 
+const accordionData = [
+  {
+    title: "What topics are covered in the trading course?",
+    content:
+      "Our trading course covers stock trading, forex, commodity trading, and cryptocurrency basics, along with risk management and technical analysis.",
+  },
+  {
+    title: "Are the trading courses suitable for beginners?",
+    content:
+      "Yes, our courses are designed for all skill levels, including beginners. We start with the basics and gradually move to advanced strategies.",
+  },
+  {
+    title: "Do I get a certificate after completing the course?",
+    content:
+      "Yes, you will receive a certificate of completion once you finish the course and pass the final assessment.",
+  },
+  {
+    title: "Are the courses self-paced or live sessions?",
+    content:
+      "We offer both self-paced courses and live interactive sessions to suit different learning preferences.",
+  },
+  {
+    title: "Do I need any prior knowledge or experience to join the course?",
+    content:
+      "No prior knowledge or experience is required. Our courses are designed to guide you step-by-step, regardless of your background.",
+  },
+];
+
+
 const FAQ = () => {
+
+  const [openIndex, setOpenIndex] = React.useState(null);
+
+  const handleAccordionClick = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="mt-32">
       <h1
@@ -25,9 +81,17 @@ const FAQ = () => {
       </h1>
       <div className=" grid md:grid-cols-2 sm: grid-cols-1 gap-8">
         {/* accordio div  */}
-        <div>
-        
-        </div>
+        <div className=" overflow-y-auto">
+      {accordionData.map((item, index) => (
+        <AccordionItem
+          key={index}
+          title={item.title}
+          content={item.content}
+          isOpen={openIndex === index}
+          onClick={() => handleAccordionClick(index)}
+        />
+      ))}
+    </div>
 {/* image div  */}
         <div>
           <Image
