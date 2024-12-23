@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import icon1 from "@/assests/images/medal.png";
+import icon2 from "@/assests/images/presentation.png";
+import icon3 from "@/assests/images/demonstration.png";
+import icon4 from "@/assests/images/islam.png";
+import Image from "next/image";
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
-import icon1 from '@/assests/images/medal.png' ;
-import icon2 from '@/assests/images/presentation.png' ;
-import icon3 from '@/assests/images/demonstration.png' ;
-import icon4 from '@/assests/images/islam.png' ;
 
 const ubuntu = Ubuntu({
   weight: ["400", "700"],
@@ -16,45 +17,58 @@ const raleway = Raleway({
   style: ["normal"],
 });
 
-const trandingData =[
-    {
-        icon: icon1,
-        title: "Professional Account",
-        disc: "Traders with professional accounts gain access to a wide range of benefits, including enhanced trading platforms"
-    },
-    {
-        icon: icon2,
-        title: "Overview Account",
-        disc: "The primary feature of a trading overview account is its ability to aggregate information from multiple accounts "
-    },
-    {
-        icon: icon3,
-        title: "Demo Account",
-        disc: "Trading demo accounts are particularly valuable for novice traders who are new to the world of investing."
-    },
-    {
-        icon: icon4,
-        title: "Islamic Account",
-        disc: "Islamic accounts also adhere to ethical guidelines that prohibit trading certain financial instruments deemed"
-    },
-]
+const trandingData = [
+  {
+    icon: icon1,
+    title: "Stock trading",
+    disc: "Gain insights and tools to analyze stocks, track market trends, and grow your investment portfolio.",
+  },
+  {
+    icon: icon2,
+    title: "Commodity Trading",
+    disc: "Trade gold, oil, and other commodities with real-time data, market analysis, and expert advice. ",
+  },
+  {
+    icon: icon3,
+    title: "Forex Trading",
+    disc: "Master forex trading with currency pair insights, market trends, and strategies for effective financial growth.",
+  },
+  {
+    icon: icon4,
+    title: "Crypto Trading",
+    disc: "Explore cryptocurrencies with secure platforms, real-time data, and expert guidance for successful trading decisions.",
+  },
+];
 
 const TradingAccounts = () => {
-    return (
-        <div className='mt-20'>
-            <h1 className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}>Trading Accounts</h1>
-            <div className={`${ubuntu.className}`}>
-{
-    trandingData.map(({icon, title, disc}, index) => {
-<div>
-    <h1>{title}</h1>
-    <p>{disc}</p>
-</div>
-    })
-}
+  return (
+    <div className="mt-32">
+      <h1
+        className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
+      >
+        What you will learn
+      </h1>
+      <div
+        className={`${ubuntu.className} grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 gap-5`}
+      >
+        {trandingData?.map(({ icon, title, disc }, index) => (
+          <div key={index} className="relative">
+            <div className="relative px-5 pt-14 pb-10 h-[220px] border rounded-sm shadow-lg hover:shadow-xl text-center">
+              <h2 className=" text-xl font-bold mb-2">
+                {title}
+              </h2>
+              <p className={`${raleway.className} text-gray-600`}>{disc}</p>
             </div>
-        </div>
-    );
+            <Image
+              src={icon}
+              alt={title}
+              className="absolute -top-5 left-4 w-14 h-14 mx-auto mb-4 bg-[#70c494] p-2 rounded-md"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default TradingAccounts;

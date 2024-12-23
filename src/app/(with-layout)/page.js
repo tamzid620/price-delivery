@@ -1,5 +1,6 @@
 import Banner from '@/components/shared/userShared/Banner/Banner';
 import UpdatedBanner from '@/components/shared/userShared/Banner/UpdatedBanner';
+import FAQ from '@/components/shared/userShared/FAQ/FAQ';
 import TradingAccounts from '@/components/shared/userShared/TradingAccounts/TradingAccounts';
 import React from 'react';
 
@@ -14,6 +15,7 @@ const Home = () => {
             {/* <Banner /> */}
             <UpdatedBanner/>
             <TradingAccounts/>
+            <FAQ/>
         </div>
     );
 };
