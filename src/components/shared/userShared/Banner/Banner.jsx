@@ -8,6 +8,16 @@ import banner4 from "@/assests/images/Banner-2.jpeg";
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
 
+const ubuntu = Ubuntu({
+  weight: ["400", "700"],
+  style: ["normal"],
+});
+
+const raleway = Raleway({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal"],
+});
+
 const bannerData = [
   {
     image: banner1 ,
@@ -38,16 +48,6 @@ const bannerData = [
     disc0: "success.",
   },
 ];
-
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "700"],
-  style: ["normal"],
-});
 
 const Banner = () => {
   // const [currentBanner, setCurrentBanner] = useState(1);
@@ -172,13 +172,13 @@ const Banner = () => {
             alt={banner.title}
           />
           <div className="absolute top-0 w-full bg-black opacity-40 inset-0" />
-          <div className="absolute ms-10 inset-0 w-full flex justify-start items-center text-white">
+          <div className="absolute md:ms-10 sm: ms-1 inset-0 w-full flex justify-start items-center text-white">
             <div>
-              <h1 className={`${ubuntu.className} uppercase text-4xl`}>
+              <h1 className={`${ubuntu.className} uppercase font-bold md:text-4xl sm: text-lg`}>
                 {banner.title} <br />
                 {banner.title0}
               </h1>
-              <p className={`${raleway.className} mt-3 font-semibold text-xl`}>
+              <p className={`${raleway.className} mt-3 font-[500] md:text-xl sm: text-sm`}>
                 {banner.disc} <br />
                 {banner.disc0}
               </p>

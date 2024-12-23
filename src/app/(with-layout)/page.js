@@ -1,4 +1,6 @@
 import Banner from '@/components/shared/userShared/Banner/Banner';
+import UpdatedBanner from '@/components/shared/userShared/Banner/UpdatedBanner';
+import TradingAccounts from '@/components/shared/userShared/TradingAccounts/TradingAccounts';
 import React from 'react';
 
 export const metadata = {
@@ -9,7 +11,9 @@ export const metadata = {
 const Home = () => {
     return (
         <div className='xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto mt-[70px]'>
-            <Banner />
+            {/* <Banner /> */}
+            <UpdatedBanner/>
+            <TradingAccounts/>
         </div>
     );
 };

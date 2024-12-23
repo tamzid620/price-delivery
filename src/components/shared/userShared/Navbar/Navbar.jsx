@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
         {/* nav ul section for large device  */}
         <div className="md:flex sm: hidden">
-          <ul className="uppercase flex gap-10 ">
+          <ul className="uppercase font-bold flex gap-10 ">
             <li title="Home">
               <Link href="/">Home</Link>
             <hr className="border-2 border-[#70c494]"/>
@@ -91,7 +91,7 @@ const Navbar = () => {
         {isOpen && (
           <ul
             className="absolute top-16 uppercase block gap-10
-           bg-[#70c494] text-white dropShadow w-full -mx-4 
+           bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
            text-center leading-[50px] py-4"
           >
             <li title="Home">
