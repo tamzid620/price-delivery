@@ -89,15 +89,15 @@ const Navbar = () => {
           <ul className="uppercase font-bold flex gap-10 ">
             <li title="Home">
               <Link href="/">Home</Link>
-              <hr className="border-2 border-[#70c494]" />
+              <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `}/>
             </li>
             <li title="About Us">
               <Link href="/">About Us</Link>
-              <hr className="border-2 border-[#70c494]" />
+              <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `} />
             </li>
             <li title="Admin Panel">
               <Link href="/">ContactUs</Link>
-              <hr className="border-2 border-[#70c494]" />
+              <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `} />
             </li>
           </ul>
         </div>
