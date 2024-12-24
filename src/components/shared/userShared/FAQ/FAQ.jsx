@@ -7,7 +7,7 @@ import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
 
 const ubuntu = Ubuntu({
-  weight: ["400", "700"],
+  weight: ["400","700"],
   style: ["normal"],
 });
 
@@ -23,12 +23,12 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         className="w-full flex justify-between items-center p-[19px] bg-gray-100 text-left"
         onClick={onClick}
       >
-        <span className="text-lg font-medium">{title}</span>
+        <span className={`${raleway.className} text-lg font-bold `}>{title}</span>
         {isOpen ? <TbArrowBadgeUpFilled /> : <TbArrowBadgeDownFilled />}
       </button>
       {isOpen && (
         <div className="p-4 bg-white text-gray-700">
-          <p>{content}</p>
+          <p className={`${raleway.className}`}>{content}</p>
         </div>
       )}
     </div>
@@ -47,9 +47,9 @@ const accordionData = [
       "Yes, our courses are designed for all skill levels, including beginners. We start with the basics and gradually move to advanced strategies.",
   },
   {
-    title: "Do I get a certificate after completing the course?",
+    title: "How long does it take to complete the course?",
     content:
-      "Yes, you will receive a certificate of completion once you finish the course and pass the final assessment.",
+      "The duration of the course depends on the type of course chosen. Self-paced courses can be completed in your own time, typically within 4-6 weeks, while live sessions follow a set schedule.",
   },
   {
     title: "Are the courses self-paced or live sessions?",
@@ -75,7 +75,7 @@ const FAQ = () => {
   return (
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       <h1
-        className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
+        className={`${ubuntu.className}  text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
       </h1>

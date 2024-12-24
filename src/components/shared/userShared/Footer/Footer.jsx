@@ -1,5 +1,17 @@
 import Link from 'next/link';
 import React from 'react';
+import { Ubuntu } from "next/font/google";
+import { Raleway } from "next/font/google";
+
+const ubuntu = Ubuntu({
+  weight: ["400","700"],
+  style: ["normal"],
+});
+
+const raleway = Raleway({
+  weight: ["300", "400", "500", "700"],
+  style: ["normal"],
+});
 
 const Footer = () => {
     return (
@@ -8,8 +20,8 @@ const Footer = () => {
          lg:px-4 md:px-4 sm: px-4">
           {/* About Section */}
           <div className='md:text-start sm: text-center'>
-            <h3 className="text-xl font-semibold mb-4">About Us</h3>
-            <p className="text-sm">
+            <h3 className={`${ubuntu.className} text-xl font-semibold mb-4 `}>About Us</h3>
+            <p className={`${raleway.className} text-sm `}>
               We are committed to providing top-notch trading solutions to help
               you succeed in the dynamic world of finance. Let’s grow together!
             </p>
@@ -44,8 +56,8 @@ const Footer = () => {
   
           {/* Contact Section */}
           <div className='md:text-right sm: text-center'>
-            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-2">
+            <h3 className= {`${ubuntu.className} text-xl font-semibold mb-4`}>Contact Us</h3>
+            <ul className={`${raleway.className} space-y-2 `}>
               <li>
                 <span>Email: </span>
                 <p
@@ -55,14 +67,14 @@ const Footer = () => {
                   pricedeliverytraders@gmail.com
                 </p>
               </li>
-              <li>Phone: +1 123-456-7890</li>
+              <li className={`${ubuntu.className} `}>Phone: +8801711658364 </li>
               {/* <li>Location: 123 Trading St., Finance City</li> */}
             </ul>
           </div>
         </div>
   
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+        <div className={`${ubuntu.className} border-t border-gray-700 mt-8 pt-4 text-center text-sm `}>
           <p>
           All rights reserved by  <Link className='underline hover:text-blue-500' href="https://www.facebook.com/SmartBSP.Agency" target='_blank'>SBSP</Link> . © {new Date().getFullYear()}
           </p>
