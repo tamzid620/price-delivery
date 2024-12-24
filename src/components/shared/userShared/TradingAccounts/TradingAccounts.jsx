@@ -1,8 +1,8 @@
 import React from "react";
-import icon1 from "@/assests/images/medal.png";
-import icon2 from "@/assests/images/presentation.png";
-import icon3 from "@/assests/images/demonstration.png";
-import icon4 from "@/assests/images/islam.png";
+import icon1 from "@/assests/icons/Stock trading.png";
+import icon2 from "@/assests/icons/commodity trading.png";
+import icon3 from "@/assests/icons/Forex Trading.png";
+import icon4 from "@/assests/icons/CryptoTrading.png";
 import Image from "next/image";
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
@@ -42,7 +42,7 @@ const trandingData = [
 
 const TradingAccounts = () => {
   return (
-    <div className="mt-32 lg:px-4 md:px-4 sm: px-4 ">
+    <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       <h1
         className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
       >
@@ -62,7 +62,7 @@ const TradingAccounts = () => {
             <Image
               src={icon}
               alt={title}
-              className="absolute -top-5 left-4 w-14 h-14 mx-auto mb-4 bg-[#70c494] p-2 rounded-md"
+              className="absolute -top-5 left-4 w-14 h-14 mx-auto mb-4 bg-[#70c494] p-3 rounded-md"
             />
           </div>
         ))}

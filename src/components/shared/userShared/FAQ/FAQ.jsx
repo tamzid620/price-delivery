@@ -73,13 +73,13 @@ const FAQ = () => {
   };
 
   return (
-    <div className="mt-32 lg:px-4 md:px-4 sm: px-4 ">
+    <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       <h1
         className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
       </h1>
-      <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 gap-8">
+      <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 md:gap-8 sm: gap-2">
         {/* accordio div  */}
         <div className=" overflow-y-auto">
       {accordionData.map((item, index) => (
@@ -95,7 +95,7 @@ const FAQ = () => {
 {/* image div  */}
         <div>
           <Image
-            className="w-full h-[400px] rounded-sm"
+            className="w-full md:h-[400px] sm: h-full rounded-sm"
             src={FAQImage}
             alt="faq image"
           />

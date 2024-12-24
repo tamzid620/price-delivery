@@ -21,15 +21,6 @@ const raleway = Raleway({
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [viewCart, setViewCart] = useState(false);
-  const [cartLength, setCartLength] = useState(0);
-
-  useEffect(() => {
-    const cartData = localStorage.getItem("cart");
-    if (cartData) {
-      const cart = JSON.parse(cartData);
-      setCartLength(cart.length);
-    }
-  }, []);
 
   const toggleViewCart = () => {
     setViewCart(!viewCart);

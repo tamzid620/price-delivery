@@ -27,20 +27,22 @@ const UpdatedBanner = () => {
         <div className="absolute inset-0 w-full flex justify-center items-center text-center">
           {/* text section  */}
           <div
-            className={`${ubuntu.className} text-white uppercase font-bold md:leading-[90px] sm: leading-[50px] text-center md:text-7xl sm: text-xl`}
+            className={`${ubuntu.className} text-white uppercase font-bold md:leading-[90px] sm: leading-[40px] text-center md:text-7xl sm: text-xl`}
           >
             <h1>Let’s Learn</h1>
-            <h2 className="md:text-[130px] sm: text-[80px]">Trading</h2>
+            <h2 className="md:text-[130px] sm: text-[68px]">Trading</h2>
             {/* button section  */}
+            <div className="flex justify-center">
             <div
-              className={`${raleway.className} flex justify-center md:gap-10 sm: gap-3 md:text-lg sm: text-sm mt-10`}
+              className={`${raleway.className} grid  md:grid-cols-2 sm: grid-cols-1 md:gap-2 sm: gap-2 md:text-lg sm: text-sm md:mt-10 sm: mt-6`}
             >
-              <div className="border-2 border-white px-3 py-2">
+              <div className="border-2 border-white px-3 py-2 md:w-[280px] sm: w-[230px]">
                 Course Launching Soon
               </div>
-              <div className=" px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600">
+              <div className="mx-auto px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[230px]">
                 Apply Now
               </div>
+            </div>
             </div>
           </div>
         </div>

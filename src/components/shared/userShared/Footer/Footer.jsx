@@ -3,11 +3,11 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-8 mt-32">
-        <div className="container  grid grid-cols-1 md:grid-cols-3 gap-8 xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
+        <footer className="bg-gray-900 text-white py-8 md:mt-32 sm: mt-10">
+        <div className="container  grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
          lg:px-4 md:px-4 sm: px-4">
           {/* About Section */}
-          <div>
+          <div className='md:text-start sm: text-center'>
             <h3 className="text-xl font-semibold mb-4">About Us</h3>
             <p className="text-sm">
               We are committed to providing top-notch trading solutions to help
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
   
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -40,10 +40,10 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
   
           {/* Contact Section */}
-          <div>
+          <div className='md:text-right sm: text-center'>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li>
@@ -52,7 +52,7 @@ const Footer = () => {
                   href="mailto:info@yourwebsite.com"
                   className="hover:underline"
                 >
-                  info@yourwebsite.com
+                  pricedeliverytraders@gmail.com
                 </p>
               </li>
               <li>Phone: +1 123-456-7890</li>
@@ -64,7 +64,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
           <p>
-          All rights reserved by  <Link className='underline hover:text-blue-500' href="https://www.facebook.com/SmartBSP.Agency">SBSP</Link> . © {new Date().getFullYear()}
+          All rights reserved by  <Link className='underline hover:text-blue-500' href="https://www.facebook.com/SmartBSP.Agency" target='_blank'>SBSP</Link> . © {new Date().getFullYear()}
           </p>
         </div>
       </footer>
