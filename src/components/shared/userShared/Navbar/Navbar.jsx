@@ -118,10 +118,10 @@ const Navbar = () => {
            bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
            text-center leading-[50px] py-4 "
           >
-            <li title="Home">
+            <li title="Home" className="border-t-2 shadow-sm shadow-white">
               <Link href="/">Home</Link>
             </li>
-            <li title="About Us">
+            <li title="About Us"  className="shadow-sm shadow-white">
               <Link href="/aboutUs">About Us</Link>
             </li>
             <li title="Admin Panel">

@@ -74,10 +74,16 @@ const FAQ = () => {
 
   return (
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
+      
       <h1
-        className={`${ubuntu.className}  text-3xl font-bold text-center mb-10`}
+        className={`${ubuntu.className} md:block sm: hidden text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
+      </h1>
+      <h1
+        className={`${ubuntu.className}  md:hidden sm: block text-3xl font-bold text-center mb-10 `}
+      >
+        FAQ
       </h1>
       <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 md:gap-8 sm: gap-2">
         {/* accordio div  */}
