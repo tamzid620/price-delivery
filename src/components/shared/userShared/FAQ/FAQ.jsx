@@ -101,7 +101,7 @@ const FAQ = () => {
 {/* image div  */}
         <div>
           <Image
-            className="w-full md:h-[400px] sm: h-0 rounded-sm"
+            className="w-full lg:h-[400px] md:h-0 sm: h-0 rounded-sm"
             src={FAQImage}
             alt="faq image"
           />

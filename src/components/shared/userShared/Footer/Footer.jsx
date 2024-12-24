@@ -15,7 +15,7 @@ const raleway = Raleway({
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-8 md:mt-32 sm: mt-10">
+        <footer className="bg-gray-900 text-white py-8 mt-10">
         <div className="container  grid grid-cols-1 md:grid-cols-2 gap-8 xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
          lg:px-4 md:px-4 sm: px-4">
           {/* About Section */}
