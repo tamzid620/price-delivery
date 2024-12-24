@@ -56,7 +56,7 @@ const Footer = () => {
                 </p>
               </li>
               <li>Phone: +1 123-456-7890</li>
-              <li>Location: 123 Trading St., Finance City</li>
+              {/* <li>Location: 123 Trading St., Finance City</li> */}
             </ul>
           </div>
         </div>
