@@ -47,7 +47,7 @@ const ContactUs = () => {
           />
 
         <div
-          className={` ${ubuntu.className} absolute top-2 lg:left-[350px] md:left-20 sm: left-0 flex items-center justify-center p-6 `}
+          className={` ${ubuntu.className} absolute md:top-2 sm: -top-4 lg:left-[350px] md:left-20 sm: left-0 flex items-center justify-center p-6 `}
         >
           <div className="w-full max-w-lg  rounded-lg shadow-lg p-8">
             <form className="space-y-6">
