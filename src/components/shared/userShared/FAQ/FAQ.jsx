@@ -1,5 +1,7 @@
-"use client";
-import * as React from "react";
+'use client';
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import FAQImage from "@/assests/images/Banner-6.jpg";
 import Image from "next/image";
 import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
@@ -67,6 +69,9 @@ const accordionData = [
 const FAQ = () => {
 
   const [openIndex, setOpenIndex] = React.useState(null);
+  useEffect(() => {
+    AOS.init();
+  },[])
 
   const handleAccordionClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -76,6 +81,8 @@ const FAQ = () => {
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       
       <h1
+        data-aos="fade-down"
+              data-aos-duration="600"
         className={`${ubuntu.className} md:block sm: hidden text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
@@ -87,7 +94,9 @@ const FAQ = () => {
       </h1>
       <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 md:gap-8 sm: gap-2">
         {/* accordio div  */}
-        <div className=" overflow-y-auto">
+        <div data-aos="fade-right"
+              data-aos-duration="600"
+               className=" overflow-y-auto">
       {accordionData.map((item, index) => (
         <AccordionItem
           key={index}
@@ -99,7 +108,8 @@ const FAQ = () => {
       ))}
     </div>
 {/* image div  */}
-        <div>
+        <div data-aos="fade-left"
+              data-aos-duration="300">
           <Image
             className="w-full lg:h-[400px] md:h-0 sm: h-0 rounded-sm"
             src={FAQImage}

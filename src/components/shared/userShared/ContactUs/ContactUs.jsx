@@ -1,4 +1,8 @@
-import React from "react";
+'use client' ;
+import React, {useEffect , useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import emailjs from '@emailjs/browser';
 import { Ubuntu } from "next/font/google";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
@@ -16,17 +20,55 @@ const raleway = Raleway({
 });
 
 const ContactUs = () => {
+
+  const form = useRef();
+  useEffect(() => {
+    AOS.init();
+  },[])
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'AUg4oQI-W4fyuB1zN',
+      })
+      .then(
+        () => {
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Message Sent Successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        },
+        (error) => {
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Something Went Wrong",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        },
+      );
+  };
+
   return (
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
-      {/* Form div  */}
-      <div className="">
+      <div  id="apply">
+      {/* Image div  */}
         <div className={` ${raleway.className}  relative `}>
           <Image
-            className=" relative w-full h-[400px]"
+            className=" relative w-full md:h-[400px] sm: h-[260px]"
             src={sectionImage}
             alt="section banner Image"
           />
-          <div className="absolute md:top-32 lg:left-32 sm: top-32 sm: left-16">
+          <div
+           data-aos="fade-down"
+              data-aos-duration="500"
+               className="absolute md:top-32 lg:left-32 sm: top-14 sm: left-16">
             <div className="md:text-start sm: text-center">
             <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
               Apply To Join My
@@ -39,7 +81,7 @@ const ContactUs = () => {
           </div>
         </div>
         {/* form div  */}
-        <div className="relative">
+        <div  className="relative">
         <Image
             className="relative w-full md:h-[500px] sm: h-[600px]"
             src={formBgImage}
@@ -47,10 +89,13 @@ const ContactUs = () => {
           />
 
         <div
-          className={` ${ubuntu.className} absolute md:top-2 sm: -top-4 lg:left-[350px] md:left-20 sm: left-0 flex items-center justify-center p-6 `}
+          className={` ${ubuntu.className} absolute md:-top-1 sm: -top-4 lg:left-[350px] md:left-20 sm: left-0 flex items-center justify-center p-6 `}
         >
           <div className="w-full max-w-lg  rounded-lg shadow-lg p-8">
-            <form className="space-y-6">
+            <form 
+            data-aos="zoom-in-down" 
+              data-aos-duration="500"
+              className="space-y-6" ref={form} onSubmit={sendEmail}>
               <div className="grid md:grid-cols-2 sm: grid-cols-1 gap-5">
                 {/* Full Name */}
                 <div>
@@ -64,6 +109,7 @@ const ContactUs = () => {
                   required
                     type="text"
                     id="fullName"
+                    name="fullName"
                     placeholder="Your Full Name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                   />
@@ -80,6 +126,7 @@ const ContactUs = () => {
                   <input
                   required
                     type="number"
+                    name="phone"
                     id="phone"
                     placeholder="Your Phone Number"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
@@ -98,6 +145,7 @@ const ContactUs = () => {
                   </label>
                   <input
                   required
+                  name="email"
                     type="email"
                     id="email"
                     placeholder="Your email"
@@ -115,6 +163,7 @@ const ContactUs = () => {
                   </label>
                   <select
                   required
+                  name="basicQuestion"
                     id="basics"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                   >

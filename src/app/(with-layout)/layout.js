@@ -7,7 +7,7 @@ const UserLayout = ({ children }) => {
         <div>
             <Navbar/>
             {children}
-            <Footer/>
+            <Footer href="#contact"/>
         </div>
     );
 }

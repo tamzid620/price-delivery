@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import icon1 from "@/assests/icons/Stock trading.png";
 import icon2 from "@/assests/icons/commodity trading.png";
 import icon3 from "@/assests/icons/Forex Trading.png";
@@ -41,22 +44,28 @@ const trandingData = [
 ];
 
 const TradingAccounts = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       <h1
+        data-aos="fade-down"
+        data-aos-duration="400"
         className={`${ubuntu.className} text-3xl font-bold text-center mb-10`}
       >
         What you will learn
       </h1>
       <div
+        data-aos="zoom-in-down"
+        data-aos-duration="400"
         className={`${ubuntu.className} grid lg:grid-cols-4 md:grid-cols-2 sm: grid-cols-1 lg:gap-5 md:gap-10 sm: gap-10`}
       >
         {trandingData?.map(({ icon, title, disc }, index) => (
           <div key={index} className="relative">
             <div className="relative px-5 pt-14 pb-10 h-[220px] border rounded-sm shadow-lg hover:shadow-xl text-center">
-              <h2 className=" text-xl font-bold mb-2">
-                {title}
-              </h2>
+              <h2 className=" text-xl font-bold mb-2">{title}</h2>
               <p className={`${raleway.className} text-gray-600`}>{disc}</p>
             </div>
             <Image
