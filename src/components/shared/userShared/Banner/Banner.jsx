@@ -5,18 +5,8 @@ import banner1 from "@/assests/images/Banner-1.jpeg";
 import banner2 from "@/assests/images/Banner-2.jpeg";
 import banner3 from "@/assests/images/Banner-3.jpeg";
 import banner4 from "@/assests/images/Banner-2.jpeg";
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
 
 const bannerData = [
   {
