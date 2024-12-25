@@ -5,18 +5,7 @@ import 'aos/dist/aos.css';
 import FAQImage from "@/assests/images/Banner-6.jpg";
 import Image from "next/image";
 import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
-
-const ubuntu = Ubuntu({
-  weight: ["400","700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const AccordionItem = ({ title, content, isOpen, onClick }) => {
   return (

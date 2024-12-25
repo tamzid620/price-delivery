@@ -1,17 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
-
-const ubuntu = Ubuntu({
-  weight: ["400","700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const Footer = () => {
     return (

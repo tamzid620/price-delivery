@@ -5,18 +5,19 @@ import 'aos/dist/aos.css';
 import BannerImage from "@/assests/images/Banner-4.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
+// import { Ubuntu } from "next/font/google";
+// import { Raleway } from "next/font/google";
 
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
+// const ubuntu = Ubuntu({
+//   weight: ["400", "700"],
+//   style: ["normal"],
+// });
 
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
+// const raleway = Raleway({
+//   weight: ["300", "400", "500", "700"],
+//   style: ["normal"],
+// });
 
 const UpdatedBanner = () => {
 

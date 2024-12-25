@@ -3,21 +3,10 @@ import React, {useEffect , useRef } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import emailjs from '@emailjs/browser';
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
 import Image from "next/image";
 import sectionImage from "@/assests/images/Banner-7.jpg";
 import formBgImage from "@/assests/images/Banner-8.png";
-
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const ContactUs = () => {
 

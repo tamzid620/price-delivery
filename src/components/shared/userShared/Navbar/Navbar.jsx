@@ -1,24 +1,13 @@
 "use client";
 import "./Navbar.css";
 import React, { useEffect, useRef, useState } from "react";
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
 import Link from "next/link";
 import GreenNavImage from "@/assests/icons/Price Delivery green.png";
 import WhiteNavImage from "@/assests/icons/Price Delivery white.png";
 import GreenMenuIcon from "@/assests/icons/green-menu.png";
 import WhiteMenuIcon from "@/assests/icons/white-menu.png";
 import Image from "next/image";
-
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "700"],
-  style: ["normal"],
-});
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

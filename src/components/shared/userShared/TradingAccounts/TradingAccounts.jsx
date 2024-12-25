@@ -7,18 +7,7 @@ import icon2 from "@/assests/icons/commodity trading.png";
 import icon3 from "@/assests/icons/Forex Trading.png";
 import icon4 from "@/assests/icons/CryptoTrading.png";
 import Image from "next/image";
-import { Ubuntu } from "next/font/google";
-import { Raleway } from "next/font/google";
-
-const ubuntu = Ubuntu({
-  weight: ["400", "700"],
-  style: ["normal"],
-});
-
-const raleway = Raleway({
-  weight: ["300", "400", "500", "700"],
-  style: ["normal"],
-});
+import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const trandingData = [
   {
