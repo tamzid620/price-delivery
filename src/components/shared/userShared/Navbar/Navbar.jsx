@@ -92,7 +92,7 @@ const Navbar = () => {
               <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `}/>
             </li>
             <li title="About Us">
-              <Link href="/">About Us</Link>
+              <Link href="#contact">About Us</Link>
               <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `} />
             </li>
             <li title="Admin Panel">
@@ -122,10 +122,10 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li title="About Us"  className="shadow-sm shadow-white">
-              <Link href="/aboutUs">About Us</Link>
+              <Link href="#contact">About Us</Link>
             </li>
             <li title="Admin Panel">
-              <Link href="/dp">ContactUs</Link>
+              <Link href="#contact">ContactUs</Link>
             </li>
           </ul>
         )}
