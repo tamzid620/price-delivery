@@ -96,7 +96,7 @@ const Navbar = () => {
               <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `} />
             </li>
             <li title="Admin Panel">
-              <Link href="#contact">ContactUs</Link>
+              <Link href="#contact">Contact Us</Link>
               <hr className={` ${scrolled ? "border-white" : "border-[#70c494]" } border-2 `} />
             </li>
           </ul>
@@ -125,7 +125,7 @@ const Navbar = () => {
               <Link href="#contact">About Us</Link>
             </li>
             <li title="Admin Panel">
-              <Link href="#contact">ContactUs</Link>
+              <Link href="#contact">Contact Us</Link>
             </li>
           </ul>
         )}
