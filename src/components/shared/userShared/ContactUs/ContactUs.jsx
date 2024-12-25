@@ -100,7 +100,7 @@ const ContactUs = () => {
                     id="fullName"
                     name="fullName"
                     placeholder="Your Full Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white bg-white"
                   />
                 </div>
 
@@ -118,7 +118,7 @@ const ContactUs = () => {
                     name="phone"
                     id="phone"
                     placeholder="Your Phone Number"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                   />
                 </div>
               </div>
@@ -138,7 +138,7 @@ const ContactUs = () => {
                     type="email"
                     id="email"
                     placeholder="Your email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                   />
                 </div>
 
@@ -154,7 +154,7 @@ const ContactUs = () => {
                   required
                   name="basicQuestion"
                     id="basics"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                   >
                     <option value="">Select an option</option>
                     <option value="yes">Yes</option>

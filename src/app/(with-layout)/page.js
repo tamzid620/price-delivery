@@ -12,7 +12,7 @@ export const metadata = {
 
 const Home = () => {
     return (
-        <div className='xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto mt-[70px]'>
+        <div className='xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto mt-[70px] '>
             {/* <Banner /> */}
             <UpdatedBanner href="#apply"/>
             <TradingAccounts/>

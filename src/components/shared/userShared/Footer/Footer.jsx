@@ -47,15 +47,8 @@ const Footer = () => {
           <div className='md:text-right sm: text-center'>
             <h3 className= {`${ubuntu.className} text-xl font-semibold mb-4`}>Contact Us</h3>
             <ul className={`${raleway.className} space-y-2 `}>
-              <li>
-                <span>Email: </span>
-                <p
-                  href="mailto:info@yourwebsite.com"
-                  className="hover:underline"
-                >
-                  pricedeliverytraders@gmail.com
-                </p>
-              </li>
+              <li  href="mailto:pricedeliverytraders@gmail.com"
+                  className="hover:underline">Email: pricedeliverytraders@gmail.com </li>
               <li className={`${ubuntu.className} `}>Phone: +8801711658364 </li>
               {/* <li>Location: 123 Trading St., Finance City</li> */}
             </ul>
