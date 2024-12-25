@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
+import fbIcon from '@/assests/icons/facebook.png' ;
 import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const Footer = () => {
@@ -14,6 +16,9 @@ const Footer = () => {
               We are committed to providing top-notch trading solutions to help
               you succeed in the dynamic world of finance. Let’s grow together!
             </p>
+            <Link href= "https://www.facebook.com/PriceDeliveryTraders" target='_blank'>
+            <Image className='w-[40px] mt-4' src={fbIcon} alt='facebook icon'/>
+            </Link>
           </div>
   
           {/* Quick Links */}
@@ -58,7 +63,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className={`${ubuntu.className} border-t border-gray-700 mt-8 pt-4 text-center text-sm `}>
           <p>
-          All rights reserved by  <Link className='underline hover:text-blue-500' href="https://www.facebook.com/SmartBSP.Agency" target='_blank'>SBSP</Link> . © {new Date().getFullYear()}
+          All rights reserved by ©  <Link className='underline uppercase hover:text-blue-500' href="https://www.facebook.com/SmartBSP.Agency" target='_blank'>smartbsp</Link> .  {new Date().getFullYear()}
           </p>
         </div>
       </footer>
