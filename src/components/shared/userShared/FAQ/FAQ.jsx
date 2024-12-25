@@ -71,7 +71,7 @@ const FAQ = () => {
       
       <h1
         data-aos="fade-down"
-              data-aos-duration="600"
+              data-aos-duration="300"
         className={`${ubuntu.className} md:block sm: hidden text-3xl font-bold text-center mb-10`}
       >
         Frequently Asked Questions
@@ -84,7 +84,7 @@ const FAQ = () => {
       <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 md:gap-8 sm: gap-2">
         {/* accordio div  */}
         <div data-aos="zoom-in-down"
-              data-aos-duration="600"
+              data-aos-duration="500"
                className=" overflow-y-auto">
       {accordionData.map((item, index) => (
         <AccordionItem
@@ -98,7 +98,7 @@ const FAQ = () => {
     </div>
 {/* image div  */}
         <div data-aos="zoom-in-down"
-              data-aos-duration="300">
+              data-aos-duration="500">
           <Image
             className="w-full lg:h-[400px] md:h-0 sm: h-0 rounded-sm"
             src={FAQImage}
