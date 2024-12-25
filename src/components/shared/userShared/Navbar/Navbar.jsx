@@ -114,11 +114,11 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <ul
-            className="absolute top-16 uppercase block gap-10
-           bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
-           text-center leading-[50px] py-4 "
+          className="absolute top-[73px] uppercase block gap-10
+          bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
+          text-center leading-[85px]"
           >
-            <li title="Home" className="border-t-2 shadow-sm shadow-white">
+            <li title="Home" className=" shadow-sm shadow-white">
               <Link href="/">Home</Link>
             </li>
             <li title="About Us"  className="shadow-sm shadow-white">
@@ -130,6 +130,7 @@ const Navbar = () => {
           </ul>
         )}
       </div>
+     
     </nav>
   );
 };
