@@ -83,7 +83,7 @@ const FAQ = () => {
       </h1>
       <div className=" grid lg:grid-cols-2 md:grid-cols-1 sm: grid-cols-1 md:gap-8 sm: gap-2">
         {/* accordio div  */}
-        <div data-aos="fade-right"
+        <div data-aos="zoom-in-down"
               data-aos-duration="600"
                className=" overflow-y-auto">
       {accordionData.map((item, index) => (
@@ -97,7 +97,7 @@ const FAQ = () => {
       ))}
     </div>
 {/* image div  */}
-        <div data-aos="fade-left"
+        <div data-aos="zoom-in-down"
               data-aos-duration="300">
           <Image
             className="w-full lg:h-[400px] md:h-0 sm: h-0 rounded-sm"
