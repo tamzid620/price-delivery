@@ -57,7 +57,7 @@ const ContactUs = () => {
           <div
            data-aos="fade-down"
               data-aos-duration="500"
-               className="absolute md:top-32 lg:left-32 sm: top-14 sm: left-16">
+               className="absolute md:top-32 lg:left-32 sm: top-14 sm: left-[60px]">
             <div className="md:text-start sm: text-center">
             <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
               Apply To Join My

@@ -53,14 +53,14 @@ useEffect(() => {
               className={`${raleway.className} grid  md:grid-cols-2 sm: grid-cols-1 md:gap-2 sm: gap-2 md:text-lg sm: text-sm md:mt-10 sm: mt-6`}
             >
               <div 
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-duration="300"
               className="border-2 border-white px-3 py-2 md:w-[280px] sm: w-[230px]">
                 Course Launching Soon
               </div>
               <Link 
               href="#apply" 
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-duration="300"
                className="mx-auto px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[230px]">
               <div>

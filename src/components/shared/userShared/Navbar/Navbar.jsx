@@ -56,12 +56,12 @@ const Navbar = () => {
     <nav
     ref={navRef}
       className={`
-       ${scrolled ? "bg-[#70c494]" : "bg-white"} 
-    fixed top-0 z-10 w-full shadow-sm shadow-gray-200`}
+       ${scrolled ? "bg-[#70c494]" : "bg-white"} fixed w-full top-0 left-0 z-10 shadow-sm shadow-gray-200`}
     >
       <div
-        className={`${ubuntu.className} relative xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
-        flex justify-between items-center lg:px-4 md:px-4 sm: px-4 `}
+        className={`${ubuntu.className} relative flex justify-between items-center 
+        xl:max-w-7xl lg:max-w-6xl md:max-w-3xl sm: max-w-sm mx-auto 
+         lg:px-4 md:px-4 sm: px-4 `}
       >
         {/* Image section  */}
         <div>
@@ -91,7 +91,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* nav ul section for medium & small  device  */}
-        <div className="relative md:hidden sm: flex">
+        <div className="relative md:hidden sm: block">
           <div>
             <Image
               onClick={toggleMenuBar}
@@ -102,10 +102,11 @@ const Navbar = () => {
           </div>
         </div>
         {isOpen && (
+          <div 
+          className="absolute top-[73px] left-0 uppercase block gap-10
+          bg-[#70c494] text-white dropShadow font-bold w-full 
+          text-center leading-[85px]">
           <ul
-          className="absolute top-[73px] uppercase block gap-10
-          bg-[#70c494] text-white dropShadow font-bold  w-full -mx-4 
-          text-center leading-[85px]"
           >
             <li title="Home" className=" shadow-sm shadow-white">
               <Link href="/">Home</Link>
@@ -117,6 +118,7 @@ const Navbar = () => {
               <Link href="#contact">Contact Us</Link>
             </li>
           </ul>
+          </div>
         )}
       </div>
      
