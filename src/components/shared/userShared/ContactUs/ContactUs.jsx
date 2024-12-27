@@ -80,16 +80,16 @@ const ContactUs = () => {
           </div>
         </div>
         {/* Image div for small device */}
-        <div className={` ${raleway.className}  relative md:hidden sm: block`}>
+        <div className={` ${raleway.className}  relative md:hidden sm: block mb-14`}>
           <Image
-            className=" relative w-full  h-[260px]"
+            className="  w-full  h-[260px]"
             src={sectionImage}
             alt="section banner Image"
           />
           <div
             data-aos="fade-down"
             data-aos-duration="500"
-            className="absolute top-14 left-[60px] flex justify-center items-center"
+            className="-mt-[200px] flex justify-center items-center mx-auto"
           >
             <div>
               
