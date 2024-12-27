@@ -28,6 +28,11 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
 
 const accordionData = [
   {
+    title: "When does the course start?",
+    content:
+      "The course launches in early 2025. Stay tuned for the exact date!",
+  },
+  {
     title: "What topics are covered in the trading course?",
     content:
       "Our trading course covers stock trading, forex, commodity trading, and cryptocurrency basics, along with risk management and technical analysis.",
@@ -46,11 +51,6 @@ const accordionData = [
     title: "Are the courses self-paced or live sessions?",
     content:
       "We offer both self-paced courses and live interactive sessions to suit different learning preferences.",
-  },
-  {
-    title: "Do I need any prior knowledge or experience to join the course?",
-    content:
-      "No prior knowledge or experience is required. Our courses are designed to guide you step-by-step, regardless of your background.",
   },
 ];
 

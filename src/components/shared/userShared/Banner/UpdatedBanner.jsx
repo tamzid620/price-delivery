@@ -39,15 +39,37 @@ useEffect(() => {
           <div
             className={`${ubuntu.className} text-white uppercase font-bold text-center`}
           >
+            {/* title for large & medium device  */}
+            <div className="md:block sm: hidden">
             <h1 
              data-aos="fade-up"
              data-aos-duration="300"
-             className="md:text-[35px] sm: text-[20px]"
+             className="text-[35px]"
              >Build Your Profitable Future <br /> in</h1>
             <h2 
              data-aos="fade-up" 
              data-aos-duration="300"
-             className="md:-mt-10 sm: -mt-3 md:text-[130px] sm: text-[55px]">2025</h2>
+             className="md:-mt-10 sm: -mt-3 text-[130px]">2025</h2>
+            </div>
+            {/* title for small  device  */}
+            <div className="md:hidden sm: block">
+            <h1 
+             data-aos="fade-up"
+             data-aos-duration="300"
+             className="text-[15px]"
+             >
+              Build Your 
+              <br />
+              <span className="text-[20px]">Profitable Future in</span>
+              </h1>
+            <h3 
+             data-aos="fade-up" 
+             data-aos-duration="300"
+             className="md:-mt-10 sm: -mt-3 text-[60px]">
+              2025
+             </h3>
+            </div>
+
             {/* button section  */}
             <div className="flex justify-center">
               <Link 

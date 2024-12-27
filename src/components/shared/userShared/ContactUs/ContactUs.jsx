@@ -19,7 +19,6 @@ const ContactUs = () => {
   }, []);
 
   const sendEmail = (e) => {
-    
     e.preventDefault();
 
     setIsLoading(true);
@@ -68,11 +67,9 @@ const ContactUs = () => {
           >
             <div className="text-start">
               <h1 className=" text-white text-4xl font-bold mb-2">
-                Apply To Enroll For 
+                Apply To Enroll For
               </h1>
-              <h2 className=" text-white text-5xl font-bold">
-              Course Details
-              </h2>
+              <h2 className=" text-white text-5xl font-bold">Course Details</h2>
             </div>
             <div className="mx-0  uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 w-[185px]">
               Fill up the Form
@@ -80,7 +77,9 @@ const ContactUs = () => {
           </div>
         </div>
         {/* Image div for small device */}
-        <div className={` ${raleway.className}  relative md:hidden sm: block mb-14`}>
+        <div
+          className={` ${raleway.className}  relative md:hidden sm: block mb-14`}
+        >
           <Image
             className="  w-full  h-[260px]"
             src={sectionImage}
@@ -92,18 +91,17 @@ const ContactUs = () => {
             className="-mt-[200px] flex justify-center items-center mx-auto"
           >
             <div>
-              
-            <div className="md:text-start sm: text-center">
-              <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
-                Apply To Enroll For 
-              </h1>
-              <h2 className=" text-white md:text-5xl sm: text-3xl font-bold">
-              Course Details
-              </h2>
-            </div>
-            <div className="mx-auto uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600  w-[184px]">
-              Fill up the Form
-            </div>
+              <div className="md:text-start sm: text-center">
+                <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
+                  Apply To Enroll For
+                </h1>
+                <h2 className=" text-white md:text-5xl sm: text-3xl font-bold">
+                  Course Details
+                </h2>
+              </div>
+              <div className="mx-auto uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600  w-[184px]">
+                Fill up the Form
+              </div>
             </div>
           </div>
         </div>
@@ -144,43 +142,23 @@ const ContactUs = () => {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                     />
                   </div>
-
-                  {/* Phone */}
+                  {/* Email */}
                   <div>
                     <label
-                      htmlFor="phone"
+                      htmlFor="email"
                       className="block text-lg font-bold text-white mb-2"
                     >
-                      Phone
+                      Email
                     </label>
                     <input
                       required
-                      type="number"
-                      name="phone"
-                      id="phone"
-                      placeholder="Your Phone Number"
+                      name="email"
+                      type="email"
+                      id="email"
+                      placeholder="Your email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
                     />
                   </div>
-                </div>
-
-                {/* <div className="grid md:grid-cols-2 sm: grid-cols-1 gap-5"> */}
-                {/* Email */}
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-lg font-bold text-white mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    required
-                    name="email"
-                    type="email"
-                    id="email"
-                    placeholder="Your email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
-                  />
                 </div>
 
                 {/* Basics of Trading */}
@@ -202,13 +180,29 @@ const ContactUs = () => {
                     <option value="no">No</option>
                   </select>
                 </div>
-                {/* </div> */}
+
+                {/* Phone */}
+                <div>
+                  <label
+                    htmlFor="askAnything"
+                    className="block text-lg font-bold text-white mb-2"
+                  >
+                    Ask Anything
+                  </label>
+                  <input
+                    type="textarea"
+                    name="askAnything"
+                    id="askAnything"
+                    placeholder="Ask Anything"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 bg-white"
+                  />
+                </div>
+
 
                 {/* Submit Button */}
                 <div>
                   {isLoading ? (
-                    
-                      <Loader />
+                    <Loader />
                   ) : (
                     <button
                       type="submit"
