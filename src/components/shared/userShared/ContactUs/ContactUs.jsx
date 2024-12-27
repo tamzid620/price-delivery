@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import sectionImage from "@/assests/images/Banner-7.jpg";
-import formBgImage from "@/assests/images/Banner-8.png";
+import formBgImage from "@/assests/images/Banner-9.png";
 import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 import Swal from "sweetalert2";
 import Loader from "@/config/Loader/Loader";
@@ -116,7 +116,7 @@ const ContactUs = () => {
           <div
             className={` ${ubuntu.className} absolute md:-top-1 sm: -top-4 lg:left-[350px] md:left-20 sm: left-0 flex items-center justify-center p-6 `}
           >
-            <div className="w-full max-w-lg  rounded-lg shadow-lg p-8">
+            <div className="w-full max-w-lg  rounded-lg  p-8">
               <form
                 data-aos="zoom-in-down"
                 data-aos-duration="500"
@@ -206,7 +206,7 @@ const ContactUs = () => {
                   ) : (
                     <button
                       type="submit"
-                      className="w-full bg-black border-2 border-white text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-[#579673] transition-colors"
+                      className="w-full bg-black border-2 border-white text-white font-bold py-3 px-6 rounded-lg shadow-xl hover:bg-[#579673] transition-colors"
                     >
                       Apply
                     </button>
