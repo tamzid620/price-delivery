@@ -1,7 +1,7 @@
-'use client' ;
+"use client";
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 import BannerImage from "@/assests/images/Banner-4.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,11 +20,10 @@ import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 // });
 
 const UpdatedBanner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
-useEffect(() => {
-  AOS.init();
-},[])
-  
   return (
     <div className="">
       <div className="relative">
@@ -34,34 +33,42 @@ useEffect(() => {
           alt="banner Image"
         ></Image>
         <div className="absolute top-0 w-full bg-black opacity-50 inset-0" />
-          {/* text section  */}
+        {/* text section  */}
         <div className="absolute inset-0 w-full flex justify-center items-center text-center">
           <div
-            className={`${ubuntu.className} text-white uppercase font-bold text-center`}
+            className={`${ubuntu.className} font-bold text-white uppercase text-center`}
           >
-            <h1 
-             data-aos="fade-up"
-             data-aos-duration="300"
-             className="md:text-[35px] sm: text-[15px]"
-             >Build Your 
-             <br /> 
-             <span className="md:text-[50px] sm: text-[20px]">Profitable Future in</span>
-             </h1>
-            <h2 
-             data-aos="fade-up" 
-             data-aos-duration="300"
-             className="md:-mt-10 sm: -mt-3 md:text-[130px] sm: text-[60px]">2025</h2>
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="300"
+              className="md:text-[40px] sm: text-[15px]"
+            >
+              Build Your
+            </h1>
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="300"
+              className="md:text-[35px] sm: text-[20px]"
+            >
+              Profitable Future in
+            </h2>
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="300"
+              className="md:-mt-12 sm: -mt-3 md:text-[170px] sm: text-[60px]"
+            >
+              2025
+            </h3>
 
             {/* button section  */}
             <div className="flex justify-center">
-              <Link 
-              href="#apply" 
-              data-aos="fade-down"
-              data-aos-duration="300"
-               className={`${raleway.className} md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}>
-              <div>
-              Stay Connected
-              </div>
+              <Link
+                href="#apply"
+                data-aos="fade-down"
+                data-aos-duration="300"
+                className={`${raleway.className} md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}
+              >
+                <div>Stay Connected</div>
               </Link>
             </div>
           </div>
