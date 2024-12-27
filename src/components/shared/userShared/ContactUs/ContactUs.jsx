@@ -54,28 +54,56 @@ const ContactUs = () => {
   return (
     <div className="md:mt-32 sm: mt-8 lg:px-4 md:px-4 sm: px-4 ">
       <div id="apply">
-        {/* Image div  */}
-        <div className={` ${raleway.className}  relative `}>
+        {/* Image div for large & medium device */}
+        <div className={` ${raleway.className}  relative md:block sm: hidden`}>
           <Image
-            className=" relative w-full md:h-[400px] sm: h-[260px]"
+            className=" relative w-full md:h-[400px]"
             src={sectionImage}
             alt="section banner Image"
           />
           <div
             data-aos="fade-down"
             data-aos-duration="500"
-            className="absolute md:top-32 lg:left-32 sm: top-14 sm: left-[60px]"
+            className="absolute md:top-32 lg:left-[150px] md:left-[50px]"
           >
-            <div className="md:text-start sm: text-center">
-              <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
-                Apply To Join My
+            <div className="text-start">
+              <h1 className=" text-white text-4xl font-bold mb-2">
+                Apply To Enroll For 
               </h1>
-              <h2 className=" text-white md:text-5xl sm: text-3xl font-bold">
-                Trading Course
+              <h2 className=" text-white text-5xl font-bold">
+              Course Details
               </h2>
             </div>
-            <div className=" md:mx-0 sm: mx-auto uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[185px] sm: w-[184px]">
+            <div className="mx-0  uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 w-[185px]">
               Fill up the Form
+            </div>
+          </div>
+        </div>
+        {/* Image div for small device */}
+        <div className={` ${raleway.className}  relative md:hidden sm: block`}>
+          <Image
+            className=" relative w-full  h-[260px]"
+            src={sectionImage}
+            alt="section banner Image"
+          />
+          <div
+            data-aos="fade-down"
+            data-aos-duration="500"
+            className="absolute top-14 left-[60px] flex justify-center items-center"
+          >
+            <div>
+              
+            <div className="md:text-start sm: text-center">
+              <h1 className=" text-white md:text-4xl sm: text-2xl font-bold mb-2">
+                Apply To Enroll For 
+              </h1>
+              <h2 className=" text-white md:text-5xl sm: text-3xl font-bold">
+              Course Details
+              </h2>
+            </div>
+            <div className="mx-auto uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600  w-[184px]">
+              Fill up the Form
+            </div>
             </div>
           </div>
         </div>

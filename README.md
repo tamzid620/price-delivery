@@ -14,7 +14,7 @@
 • give me a banner size photo for my website banner. the banner should have trading related object like graph dollars, trading icons or logo etc. banner left side should empty. and the other objects should locate in right side. 
 use this color  in this banner #70c494
 • 
-• 
+•  ’
 • 
 • 
 •

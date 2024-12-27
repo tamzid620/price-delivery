@@ -34,40 +34,31 @@ useEffect(() => {
           alt="banner Image"
         ></Image>
         <div className="absolute top-0 w-full bg-black opacity-50 inset-0" />
-        <div className="absolute inset-0 w-full flex justify-center items-center text-center">
           {/* text section  */}
+        <div className="absolute inset-0 w-full flex justify-center items-center text-center">
           <div
-            className={`${ubuntu.className} text-white uppercase font-bold md:leading-[90px] sm: leading-[40px] text-center md:text-7xl sm: text-xl`}
+            className={`${ubuntu.className} text-white uppercase font-bold text-center`}
           >
             <h1 
              data-aos="fade-up"
              data-aos-duration="300"
-             >Let’s Learn</h1>
+             className="md:text-[35px] sm: text-[20px]"
+             >Build Your Profitable Future <br /> in</h1>
             <h2 
              data-aos="fade-up" 
              data-aos-duration="300"
-             className="md:text-[130px] sm: text-[68px]">Trading</h2>
+             className="md:-mt-10 sm: -mt-3 md:text-[130px] sm: text-[55px]">2025</h2>
             {/* button section  */}
             <div className="flex justify-center">
-            <div
-              className={`${raleway.className} grid  md:grid-cols-2 sm: grid-cols-1 md:gap-2 sm: gap-2 md:text-lg sm: text-sm md:mt-10 sm: mt-6`}
-            >
-              <div 
-              data-aos="fade-down"
-              data-aos-duration="300"
-              className="border-2 border-white px-3 py-2 md:w-[280px] sm: w-[230px]">
-                Course Launching Soon
-              </div>
               <Link 
               href="#apply" 
               data-aos="fade-down"
               data-aos-duration="300"
-               className="mx-auto px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[230px]">
+               className={`${raleway.className} md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}>
               <div>
-              Apply Now
+              Stay Connected
               </div>
               </Link>
-            </div>
             </div>
           </div>
         </div>
