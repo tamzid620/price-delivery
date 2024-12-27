@@ -48,14 +48,14 @@ const UpdatedBanner = () => {
             <h2
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:text-[35px] sm: text-[20px]"
+              className="md:text-[35px] sm: text-[15px]"
             >
               Profitable Future in
             </h2>
             <h3
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:-mt-12 sm: -mt-3 md:text-[170px] sm: text-[60px]"
+              className="md:-mt-12 sm: -mt-5 md:text-[170px] sm: text-[75px]"
             >
               2025
             </h3>
@@ -66,7 +66,7 @@ const UpdatedBanner = () => {
                 href="#apply"
                 data-aos="fade-down"
                 data-aos-duration="300"
-                className={`${raleway.className} md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}
+                className={`${raleway.className} md:-mt-6 sm: mt-0 md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}
               >
                 <div>Stay Connected</div>
               </Link>
