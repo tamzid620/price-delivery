@@ -7,25 +7,6 @@ import Image from "next/image";
 import { TbArrowBadgeDownFilled , TbArrowBadgeUpFilled } from "react-icons/tb"
 import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
-const AccordionItem = ({ title, content, isOpen, onClick }) => {
-  return (
-    <div className="border rounded-md shadow-sm mb-4 overflow-hidden">
-      <button
-        className="w-full flex justify-between items-center p-[19px] bg-gray-100 text-left"
-        onClick={onClick}
-      >
-        <span className={`${raleway.className} text-lg font-bold `}>{title}</span>
-        {isOpen ? <TbArrowBadgeUpFilled /> : <TbArrowBadgeDownFilled />}
-      </button>
-      {isOpen && (
-        <div className="p-4 bg-white text-gray-700">
-          <p className={`${raleway.className}`}>{content}</p>
-        </div>
-      )}
-    </div>
-  );
-};
-
 const accordionData = [
   {
     title: "When does the course start?",
@@ -35,7 +16,7 @@ const accordionData = [
   {
     title: "What topics are covered in the trading course?",
     content:
-      "Our trading course covers stock trading, forex, commodity trading, and cryptocurrency basics, along with risk management and technical analysis.",
+      "The mentorship will cover the teaching of all kinds of trading in the world. You will be able to trade any asset class with our algorithmic theory.",
   },
   {
     title: "Are the trading courses suitable for beginners?",
@@ -52,7 +33,31 @@ const accordionData = [
     content:
       "We offer both self-paced courses and live interactive sessions to suit different learning preferences.",
   },
+  {
+    title: "Does the mentorship provide signals?",
+    content:
+      "No, we do not offer signals or anything of this sort. We don't believe in signals, as we want to make independent trades. This is the core intention of PDT.",
+  },
 ];
+
+const AccordionItem = ({ title, content, isOpen, onClick }) => {
+  return (
+    <div className="border rounded-md shadow-sm mb-4 overflow-hidden">
+      <button
+        className="w-full flex justify-between items-center p-[12px] bg-gray-100 text-left"
+        onClick={onClick}
+      >
+        <span className={`${raleway.className} text-lg font-bold `}>{title}</span>
+        {isOpen ? <TbArrowBadgeUpFilled /> : <TbArrowBadgeDownFilled />}
+      </button>
+      {isOpen && (
+        <div className="p-4 bg-white text-gray-700">
+          <p className={`${raleway.className}`}>{content}</p>
+        </div>
+      )}
+    </div>
+  );
+};
 
 
 const FAQ = () => {

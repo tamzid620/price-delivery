@@ -36,26 +36,28 @@ const UpdatedBanner = () => {
         {/* text section  */}
         <div className="absolute inset-0 w-full flex justify-center items-center text-center">
           <div
-            className={`${ubuntu.className} font-bold text-white uppercase text-center`}
+            className={`${ubuntu.className} text-white uppercase text-center`}
           >
             <h1
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:text-[40px] sm: text-[15px]"
+              className="md:text-[28px] sm: text-[10px] font-[500]"
             >
-              Build Your
+              {/* Build Your */}
+              Start Your Profitable
             </h1>
             <h2
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:text-[35px] sm: text-[15px]"
+              className="md:text-[32px] sm: text-[14px] font-[500]"
             >
-              Profitable Future in
+              {/* Profitable Future in */}
+              Journey With Us In
             </h2>
             <h3
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:-mt-12 sm: -mt-5 md:text-[170px] sm: text-[75px]"
+              className="md:-mt-12 sm: -mt-5 md:text-[170px] sm: text-[75px] font-bold"
             >
               2025
             </h3>
