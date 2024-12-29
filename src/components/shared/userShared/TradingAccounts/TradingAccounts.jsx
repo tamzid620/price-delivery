@@ -73,9 +73,6 @@ const TradingAccounts = () => {
             <h2 className="text-xl font-semibold text-gray-800 group-hover:text-teal-500 transition">
               {title}
             </h2>
-            <p className="text-sm text-gray-500 mt-2">
-              Explore {title} to unlock the potential of global trading.
-            </p>
           </div>
         </div>
       ))}
