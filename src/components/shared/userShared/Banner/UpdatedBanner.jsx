@@ -68,7 +68,7 @@ const UpdatedBanner = () => {
                 href="#apply"
                 data-aos="fade-down"
                 data-aos-duration="300"
-                className={`${raleway.className} md:-mt-6 sm: mt-0 md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[230px] sm: w-[150px] `}
+                className={`${raleway.className} md:-mt-6 sm: mt-0 md:text-lg sm: text-sm px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 md:w-[190px] sm: w-[150px] font-bold `}
               >
                 <div>Stay Connected</div>
               </Link>
