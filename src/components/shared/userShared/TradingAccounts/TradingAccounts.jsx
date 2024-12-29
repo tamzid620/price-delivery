@@ -39,7 +39,7 @@ const TradingAccounts = () => {
   }, []);
 
   return (
-    <div className="md:mt-32 sm:mt-8 lg:px-8 md:px-6 sm: px-4">
+    <div className="md:mt-32 sm: mt-10 lg:px-8 md:px-6 sm: px-4">
     <div data-aos="fade-down" data-aos-duration="400" className="text-center">
       <h1
         className={`${ubuntu.className} text-4xl font-bold text-gray-800 mb-6`}
@@ -59,7 +59,7 @@ const TradingAccounts = () => {
     <div
       data-aos="zoom-in-down"
       data-aos-duration="400"
-      className={`grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 gap-8`}
+      className={`grid lg:grid-cols-5 md:grid-cols-2 sm: grid-cols-1 md:gap-8 sm: gap-12`}
     >
       {trandingData.map(({ icon, title }, index) => (
         <div
