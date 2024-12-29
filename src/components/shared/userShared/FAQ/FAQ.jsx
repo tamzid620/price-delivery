@@ -16,12 +16,12 @@ const accordionData = [
   {
     title: "What topics are covered in the trading course?",
     content:
-      "The mentorship will cover the teaching of all kinds of trading in the world. You will be able to trade any asset class with our algorithmic theory.",
+      "The mentorship will cover the teaching of all kinds of trading in the world. You will be able to trade any asset class with our algorithmic theory.",
   },
   {
-    title: "Are the trading courses suitable for beginners?",
+    title: "Is the mentorship suitable for beginners?",
     content:
-      "Yes, our courses are designed for all skill levels, including beginners. We start with the basics and gradually move to advanced strategies.",
+      "Yes, the mentorship is designed for all skill levels, including beginners. We start with the basics and gradually move to advanced lessons. But we'd still recommend watching our YouTube videos first.",
   },
   {
     title: "How long does it take to complete the course?",
@@ -29,9 +29,9 @@ const accordionData = [
       "The duration of the course depends on the type of course chosen. Self-paced courses can be completed in your own time, typically within 4-6 weeks, while live sessions follow a set schedule.",
   },
   {
-    title: "Are the courses self-paced or live sessions?",
+    title: "Is the mentorship self-paced or live sessions? ",
     content:
-      "We offer both self-paced courses and live interactive sessions to suit different learning preferences.",
+      "For everyone's convenience this mentorship is going to be self-paced. You can learn the lessons at any time from anywhere in the world.",
   },
   {
     title: "Does the mentorship provide signals?",
