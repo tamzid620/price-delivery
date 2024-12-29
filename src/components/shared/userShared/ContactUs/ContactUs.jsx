@@ -63,14 +63,14 @@ const ContactUs = () => {
           <div
             data-aos="fade-down"
             data-aos-duration="500"
-            className="absolute md:top-20 lg:left-[150px] md:left-[50px]"
+            className="absolute lg:left-[150px] md:top-32 md:left-[50px]"
           >
             <div className="text-start text-white ">
-              <h1 className=" text-[35px] font-bold">
+              <h1 className=" text-[40px] font-bold">
               Give us your best email 
               </h1>
-              <h2 className="text-[45px] font-bold">to get all the</h2>
-              <h3 className="text-[32px] font-bold">latest updates</h3>
+              <h2 className="text-[30px] font-bold">to get all the latest updates</h2>
+              <h3 className="text-[32px] font-bold"></h3>
             </div>
             <div className="text-center uppercase mt-6 text-lg font-bold text-white px-3 py-2 bg-[#70c494] rounded-sm hover:bg-green-600 w-[190px]">
               Fill up the Form
@@ -91,7 +91,7 @@ const ContactUs = () => {
             data-aos-duration="500"
             className="-mt-[200px] flex justify-center items-center mx-auto"
           >
-            <div>
+            <div className="-mt-5">
               <div className="text-center text-white">
                 <h1 className="text-[25px] font-bold">
                 Give us your best email 
