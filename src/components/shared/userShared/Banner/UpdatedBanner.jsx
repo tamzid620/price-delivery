@@ -41,7 +41,7 @@ const UpdatedBanner = () => {
             <h1
               data-aos="fade-up"
               data-aos-duration="300"
-              className="md:text-[28px] sm: text-[10px] font-[500]"
+              className="md:text-[28px] sm: text-[10px] font-[700]"
             >
               {/* Build Your */}
               Start Your Profitable
