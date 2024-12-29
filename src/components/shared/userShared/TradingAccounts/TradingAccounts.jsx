@@ -39,7 +39,7 @@ const TradingAccounts = () => {
   }, []);
 
   return (
-    <div className="md:mt-32 sm:mt-8 lg:px-8 md:px-6 sm:px-4">
+    <div className="md:mt-32 sm:mt-8 lg:px-8 md:px-6 sm: px-4">
     <div data-aos="fade-down" data-aos-duration="400" className="text-center">
       <h1
         className={`${ubuntu.className} text-4xl font-bold text-gray-800 mb-6`}
