@@ -9,12 +9,12 @@ import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const accordionData = [
   {
-    title: "When does the course start?",
+    title: "When does the mentorship start?",
     content:
-      "The course launches in early 2025. Stay tuned for the exact date!",
+      "The mentorship launches in early 2025. Stay tuned for the exact date!",
   },
   {
-    title: "What topics are covered in the trading course?",
+    title: "What topics are covered in the trading mentorship?",
     content:
       "The mentorship will cover the teaching of all kinds of trading in the world. You will be able to trade any asset class with our algorithmic theory.",
   },
@@ -24,9 +24,9 @@ const accordionData = [
       "Yes, the mentorship is designed for all skill levels, including beginners. We start with the basics and gradually move to advanced lessons. But we'd still recommend watching our YouTube videos first.",
   },
   {
-    title: "How long does it take to complete the course?",
+    title: "How long does it take to complete the mentorship?",
     content:
-      "The duration of the course depends on the type of course chosen. Self-paced courses can be completed in your own time, typically within 4-6 weeks, while live sessions follow a set schedule.",
+      "The duration of the mentorship depends on the type of mentorship chosen. Self-paced mentorships can be completed in your own time, typically within 4-6 weeks, while live sessions follow a set schedule.",
   },
   {
     title: "Is the mentorship self-paced or live sessions? ",

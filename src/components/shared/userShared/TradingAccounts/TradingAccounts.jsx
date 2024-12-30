@@ -7,29 +7,34 @@ import icon2 from "@/assests/icons/commodity trading.png";
 import icon3 from "@/assests/icons/Forex Trading.png";
 import icon4 from "@/assests/icons/CryptoTrading.png";
 import icon5 from "@/assests/icons/index Trading.png";
+import icon6 from "@/assests/icons/stock-market.png";
 import Image from "next/image";
 import { raleway, ubuntu } from "@/config/Fonts/fontProvider";
 
 const trandingData = [
   {
     icon: icon1,
-    title: "Bangladesh/Foreign stock market",
+    title: "Bangladesh Stock",
   },
   {
-    icon: icon3,
-    title: "Forex",
+    icon: icon6,
+    title: "Foreign Stock",
+  },
+  {
+    icon: icon5,
+    title: "Index",
   },
   {
     icon: icon2,
     title: "Commodity",
   },
   {
-    icon: icon4,
-    title: "Crypto",
+    icon: icon3,
+    title: "Forex",
   },
   {
-    icon: icon5,
-    title: "Index",
+    icon: icon4,
+    title: "Crypto",
   },
 ];
 
@@ -59,7 +64,7 @@ const TradingAccounts = () => {
     <div
       data-aos="zoom-in-down"
       data-aos-duration="400"
-      className={`grid lg:grid-cols-5 md:grid-cols-2 sm: grid-cols-1 md:gap-8 sm: gap-12`}
+      className={`grid lg:grid-cols-6 md:grid-cols-2 sm: grid-cols-1 md:gap-8 sm: gap-12`}
     >
       {trandingData.map(({ icon, title }, index) => (
         <div
