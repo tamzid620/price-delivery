@@ -2,8 +2,8 @@
 import "./Navbar.css";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import GreenNavImage from "@/assests/icons/Price Delivery green.png";
-import WhiteNavImage from "@/assests/icons/Price Delivery white.png";
+import GreenNavImage from "@/assests/icons/PDT.png";
+import WhiteNavImage from "@/assests/icons/PDT White.png";
 import GreenMenuIcon from "@/assests/icons/green-menu.png";
 import WhiteMenuIcon from "@/assests/icons/white-menu.png";
 import Image from "next/image";
@@ -69,7 +69,7 @@ const Navbar = () => {
             <Image
               src={scrolled ? WhiteNavImage : GreenNavImage}
               alt="navbar-image"
-              className="w-[120px] py-3"
+              className="w-[100px] py-3"
             />
           </Link>
         </div>
