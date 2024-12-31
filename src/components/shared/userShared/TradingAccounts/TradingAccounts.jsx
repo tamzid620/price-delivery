@@ -64,7 +64,7 @@ const TradingAccounts = () => {
     <div
       data-aos="zoom-in-down"
       data-aos-duration="400"
-      className={`grid lg:grid-cols-6 md:grid-cols-2 sm: grid-cols-1 md:gap-8 sm: gap-12`}
+      className={`grid lg:grid-cols-6 md:grid-cols-2 sm: grid-cols-1 lg:gap-5 md:gap-14 sm: gap-12`}
     >
       {trandingData.map(({ icon, title }, index) => (
         <div

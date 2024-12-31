@@ -14,7 +14,7 @@ const accordionData = [
       "The mentorship launches in early 2025. Stay tuned for the exact date!",
   },
   {
-    title: "What topics are covered in the trading mentorship?",
+    title: "What topics are covered in the mentorship?",
     content:
       "The mentorship will cover the teaching of all kinds of trading in the world. You will be able to trade any asset class with our algorithmic theory.",
   },
@@ -26,7 +26,7 @@ const accordionData = [
   {
     title: "How long does it take to complete the mentorship?",
     content:
-      "The duration of the mentorship depends on the type of mentorship chosen. Self-paced mentorships can be completed in your own time, typically within 4-6 weeks, while live sessions follow a set schedule.",
+      `Trading is not a "get rich quick" scheme. You need time and patience to get good at trading. The key to mastering a skill is to practice consistently and deliberately. That's what we do here. And that's why you will need at least 6-12 months to complete the mentorship. The more serious you are, the faster you will finish it.`,
   },
   {
     title: "Is the mentorship self-paced or live sessions? ",
@@ -36,7 +36,7 @@ const accordionData = [
   {
     title: "Does the mentorship provide signals?",
     content:
-      "No, we do not offer signals or anything of this sort. We don't believe in signals, as we want to make independent trades. This is the core intention of PDT.",
+      "No, we do not offer signals or anything of this sort. We don't believe in signals, as we want to make independent traders. This is the core intention of PDT.",
   },
 ];
 
